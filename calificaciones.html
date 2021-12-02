@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--tipo de documento-->
+   <head>
+         <!--favicon-->
+         <link rel="icon" href="images/max.png" type="image/png"> 
+         <title> ...:: Proyecto Tec Campus Pinotepa ::..</title>
+         <!-- indicaciones de los metas-->
+         <meta charset="UTF-8"/>
+         <!--hoja de esilo(internas o externas)-->
+         <meta name="descripcion" content="proyecto del TecNM capus pinotepa "/>
+         <meta name="keywords" content="Motos, Lugares, Biker "/>
+         <meta name="author"  content="Maximino Mejía Ruíz, maximinomejiaruiz@gmail.com"/>
+         <meta http-equiv="refresh" content="80">
+         <meta name="description" lang="es" content="proyecto tec" />
+         <meta name="robots" content="index, Follow">
+         <meta http-equiv="pragma" content="no-cache" >
+         <meta name="languege" content="ES"/>
+
+		<link rel="stylesheet" type=text/css href="css/calificacion.css" media="all"> 
+
+		<style type="text/css">
+			#border{
+			  width: 130px;
+			  height: 130px;
+			  border-radius: 50%;
+			  border:10px solid #0026ff;
+			  margin: 15px auto;
+			  }
+		  
+		  #clock{
+			  position: relative;
+			  width:110px;
+			  height: 110px;
+			  border-radius: 50%;
+			  border: 10px solid #ffffff;
+			  background-color: #000000;
+		  }
+		  .scale{
+			  width: 60px;
+			  height: 2px;
+			  background-color: #5c7a90;
+		  }
+		  
+		   
+		  .scale::after{
+			  content: '';
+			  position: absolute;
+			  right: 1px;
+			  width: 10px;
+			  height: 2px;
+			  background-color: aliceblue;
+		  }
+		  .scale,.num,.hour,.min,.sec{
+			  position: absolute; 
+			  top: 50%;
+			  left: 50%;
+			  transform: translateY(-50%);
+			  transform-origin: left center; 
+		  }
+		  .num{
+			  width: 40%;
+			  height: 25px;
+			  font-size: 15px;
+			  color: #00FFFF;
+			  /* background-color: #00FFFF; */
+			  text-align: right;
+		  }
+			  
+		  .num span {
+			  display: inline-block; 
+		  }
+		  .hour{
+			  width: 20%;
+			  height: 5px;
+			  background-color: #ffffff;	
+			  transform: rotate(-60deg);
+		  }
+		  
+		  .min{
+			  width: 25%;
+			  height: 3px;
+			  background-color: #ffffff;	
+			  transform: rotate(-30deg);
+		  }
+		  
+		  .sec{
+			  width: 30%;
+			  height: 2px;
+			  background-color: #f10000;
+				  transform: rotate(-90deg);
+		  }
+		  .pointer_list::after{
+			  content: '';
+			  position: absolute; 
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%,-50%);
+			  width: 15px; 
+			  height: 15px;
+			  border-radius: 50%;
+			  background-color: #00FFFF;
+		  }
+          table, td {
+        border:3px solid black;
+        text-align: center;
+      }
+
+      table {
+        border-collapse:collapse;
+        width:100%;
+      }
+      td {
+        padding:10px;
+      }
+		  </style>
+
+
+
+		
+   </head>
+
+ 
+  <body >
+	  <!--reloj analogico-->
+	  
+
+
+	  <!--Encabezado de la plantilla-->
+	  <header>
+		<h1>(-_-)::FULL BIKERS::(-_-)</h1>
+		<h2>-----Una Vida Sobre Ruedas-----</h2>
+		  <img src="images/logoface.png"  width="40px" height="40px" hspace="1px" vspace="2px" alt="facebook" aling="rigth" >
+		  <img src="images/Logo-Instagram.png"  width="45px" height="45px" hspace="1px" vspace="2px" alt="instagram" aling="rigth">
+		  <img src="images/twitter.png"  width="40px" height="40px" hspace="1px" vspace="2px" alt="twitwer" aling="rigth">
+
+		  
+			
+	  </header>
+
+	  <!--Barra de navegación-->
+
+	  <nav>
+		  
+			<div id="menu"> 
+				<ul>
+					<li id="inicio" ><a href="index.html" class="nivel1">Inicio</a>
+					<li id="equipo" ><a href="#" class="nivel1">Equipo</a> 
+						<ul>
+							<li><a href="cascos.html">Cascos</a></li>
+							<li><a href="accesorios.html">Accesorios</a></li>
+							<li><a href="neumaticos.html">Neumaticos</a></li>
+						</ul>
+					</li>
+
+					<li id="mantenimiento" ><a href="#" class="nivel1">Mantenimiento</a> 
+						<ul>
+							<li><a href="motos.html">Motos</a></li>
+							<li><a href="motor.html">Motor</a></li>
+						</ul>
+					</li>
+
+					<li id="consejos" ><a href="#" class="nivel1">Consejos</a> 
+						<ul>
+							<li><a href="proteccion.html">Protección</a></li>
+						</ul>
+					</li>
+
+					<li id="datoslegales" ><a href="#" class="nivel1">Datos Legales</a> 
+						<ul>
+							<li><a href="informacion.html">Información</a></li>
+							
+						</ul>
+					</li>
+
+					<li id="inicio" ><a href="sesion.html" class="nivel1">Inicio de Sesion </a> 
+						
+					</li>
+
+					<li id="informacion" ><a href="#" class="nivel1">Información</a> 
+                        <ul>
+                        
+                            <li><a href="contactos.html">Contactos</a></li>
+                           <li><a href="staff.html">Staff</a></li>
+						   <li><a href="testimonios.html">Testimonios</a></li>
+                           <li><a href="ubicacion.html">ubicación</a></li>
+                           <li><a href="calificaciones.html">calificación</a></li>
+                        </ul>
+                    </li>
+
+
+				</ul>
+		     </div>  
+	  </nav>
+
+	 <!--Setion/Sección--> 
+	 <section>
+		
+
+
+	<!--ddss-->
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+	<!---->
+
+</body>
+		
+		 <h1>Full Bikers</h1>
+		
+		 
+		 <article><h3></h3><br>
+			<table border="0" cellpadding="0">
+                <caption><strong>Mi Album de FOTOS </strong></caption>
+                <tr>
+                  <td width="100%"><img src="images/1.jpeg" width="900" height="500" name="photoslider"></td>
+                </tr>
+                <tr>
+                  <td width="100%">
+                    
+              <script >
+              var photos=new Array()
+              var which=0;
+              
+              /*Change the below variables to reference your own images. You may have as many images in the slider as you wish*/
+              photos[0]="images/1.jpeg"
+              photos[1]="images/2.jpeg"
+              photos[2]="images/3.jpeg"
+              photos[3]="images/4.jpeg"
+              photos[4]="images/5.jpeg"
+              photos[5]="images/6.jpeg"
+              photos[6]="images/7.jpeg"
+              photos[7]="images/8.jpeg"
+              photos[8]="images/9.jpeg"
+              photos[9]="images/10.jpeg"
+              
+              
+              function backward(){
+              if (which>0){
+              window.status=''
+              which--
+              document.images.photoslider.src=photos[which]
+              }
+              }
+              
+              
+              function forward(){
+              if (which<photos.length-1){
+              which++
+              document.images.photoslider.src=photos[which]
+              }
+              else window.status='Fin de la Galeria'
+              }
+              </script>
+              
+              
+              <form method="POST">
+                    <div align="center"><center><p>
+                      <input type="button" value="Atras" name="B2"
+                          onClick="backward()"> <input type="button" value="Adelante" name="B1"
+                          onClick="forward()"><br>
+              
+                    <a href="albumfotos.html" onClick="which=1;backward();return false"><small>Iniciar</small></a></p>
+                    </center>
+                      </div>
+                  </form>
+                  
+                  </td>
+                </tr>
+              </table>
+		 </article>
+		 </section>
+       
+	 <aside>
+		 <div id="anuncio">
+			 <h1>Califica nuestra pagina del 1 al 10 en esta sección </h1>
+			 
+		 </div>
+	 </aside>
+
+	 <aside>
+		<div id="anuncio">
+			<h1>Encuesta</h1>
+                    <center>
+            <form name="calificaciones" method="post" action="">
+                Primera Impresión <br> <input type="text" name="notal" size="4" maxlength="5"> <br>
+                Amigable al Usuario <br> <input type="text" name="notal" size="4" maxlength="5"> <br>
+                Implementacion de Colores <br> <input type="text" name="notal" size="4" maxlength="5"> <br>
+                Diseño en General <br> <input type="text" name="notal" size="4" maxlength="5"> <br>
+                Recomendaria este sitio web <br> <input type="text" name="notal" size="4" maxlength="5"> <br>
+                 
+                promedio de Popularidad <br> <input type="text" name="informe" size="4" maxlength="5"> <br>
+                <br>
+                <input type="button" name="submit" value="calcular Popularidad" onclick="promediocalif()"> <br>
+                <br>
+                <input type="reset" name="submit2" value="limpiar"> <br>
+          
+              </form>
+            </center>
+			<script>
+                function promediocalif(){
+                    suma=0;
+                    total=0;
+            
+                    for(i=0; i<=document.calificaciones.elements.length; i++){
+                          ele = document.calificaciones.elements[i];
+            
+                          if (ele.type=='text' && !isNaN(parseFloat(ele.value))){
+                              suma +=1;
+                              total += parseFloat(ele.value);
+                          }
+            
+                          if (suma !=0){
+                                 prom=total/suma;
+                                 document.calificaciones.informe.value=prom;
+                          } else{ 
+                                         document.calificaciones.informe.value=0;
+                          }
+            
+            
+                    }
+            
+                }
+            </script>
+		</div>
+	</aside>
+
+
+	<aside>
+		<div id="anuncio">
+			<h1>Hora</h1>
+
+			<div id="border">
+				<div id="clock">
+				   
+				  <ul class="scale_list">
+					<!-- <li class="scale"></li> -->
+				  </ul>
+			  
+				   
+				  <ul class="num_list">
+					<!-- <li class="num"><span>3</span></li>-->
+				  </ul>
+			  
+				   
+				  <div class="pointer_list">
+					<div class="hour"></div>
+					<div class="min"></div>
+					<div class="sec"></div>
+				  </div>
+				</div>
+			  </div>
+			
+			
+				<script type="text/javascript">
+					var scale_list=document.querySelector(".scale_list");
+				  var num_list=document.querySelector(".num_list");
+				  var hour=document.querySelector(".hour");
+				  var min=document.querySelector(".min");
+				  var sec=document.querySelector(".sec");
+				  
+				
+				  function setScale(){
+					  for(var i=0;i<60;i++){
+						  scale_list.innerHTML+=`<li class="scale" style="transform:translateY(-50%) rotate(${i*6}deg)"></li>`;
+					  }
+				  }
+				  setScale()
+				  
+				  
+				  function setNum(){
+					  for(var i=1;i<13;i++){
+						  num_list.innerHTML+=`
+						  <li class="num" style="transform:translateY(-50%) rotate(${i*30-90}deg)">
+							  <span style="transform:rotate(${-(i*30-90)}deg)">${i}</span>
+						  </li>`;
+					  }
+				  }
+				  setNum()
+				  
+				  
+				  var timer=0;
+				  timer=setInterval(function(){
+					  // Obtener la hora actual
+					  var time=new Date();
+					  var hours=time.getHours();
+					  var minute=time.getMinutes();
+					  var second=time.getSeconds();
+					  
+					  // Obtener el ángulo de rotación del puntero
+					  hour.style.transform=`rotate(${hours*30-90}deg)`;
+					  min.style.transform=`rotate(${minute*30-90}deg)`;
+					  sec.style.transform=`rotate(${second*6-90}deg)`;
+				  },1000)
+				  
+				  </script>
+
+			
+		</div>
+		
+	</aside>
+
+	<aside>
+		<div id="anuncio">
+			<h1>Fecha</h1>
+			
+			<center><style type="text/css">
+
+				.mifecha{
+					background-color: rgb(77, 123, 250);
+					padding: 3px;
+					width: 110px;
+					text-align: center;
+					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+					font-size: 5 px;
+					border-radius: 6px;
+	
+				}
+	
+				.mifecha .anno{
+					background-color: rgb(6, 177, 0);
+					color: mintcream;
+					padding: 2px;
+					font-size: 100%;
+					margin-bottom: 3px;
+					letter-spacing: 2px;
+					font-weight: bold;
+	
+				}
+	
+				.mifecha .dia{
+					background-color: rgb(250, 250, 250);
+					color:rgb(7, 7, 7) ;
+					font-size: 35px;
+					padding: 2px 8px 5px;
+					margin-bottom: 3px;
+					font-weight: bold;
+					text-shadow: 1px 1px 1px #000;
+				}
+	
+				.mifecha .mes{
+					font-weight: bold;
+					font-size: 12px;
+					font-family: Arial, Helvetica, sans-serif;
+					background-color: rgb(235, 4, 4);
+					color: papayawhip;
+				}
+	
+			</style>
+	
+			<script type="text/javascript">
+				
+				var f=new Date();
+				var meses= new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	
+				document.write('<div class="mifecha">');
+				document.write('<div class="anno">' + f.getFullYear() + '</div>');
+				document.write('<div class="dia">'+ f.getDate()+'</div>');
+				document.write('<div class="mes">' + meses[f.getMonth()]+'</div>');
+				document.write('</div>');
+	
+			</script>	</center>
+			
+		</div>
+	</aside>
+
+	 <footer>
+		 <p>
+			Desarrolladores: Erick Darshan Rendon Ventura, Maximino Mejía Ruiz<br>
+			Full bikers
+		 </p>
+
+	 </footer>
+
+  
+    <!--menu-->
+    <!--texto parrafos-->
+    <!--Lista desordenadas-->
+
+    <!--multimedia-->
+    <!--pie de paginas-->
+
+  </body> 
+</html>
